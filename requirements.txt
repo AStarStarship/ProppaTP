@@ -1,0 +1,15 @@
+# torch — installed CPU build on this VM (no NVIDIA GPU yet).
+# When the 5070 Ti / 5060 Ti are passed through, reinstall the CUDA build:
+#   pip uninstall torch torchvision
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu126
+torch>=2.4
+transformers>=4.46
+sentencepiece
+accelerate>=0.34
+datasets
+# For benching:
+numpy
+psutil
+# HTTP server:
+fastapi
+uvicorn
